@@ -1,0 +1,89 @@
+/*Estilos do nav bar*/
+:root {
+  --color-bg: #0e141b;
+  --primary-color: #22333b;
+  --bg-btnColor: #9a031e;
+  --color-text-primary: #eae0d5;
+  --color-text-secundary: #ffb703;
+  --font-primary: "Trebuchet MS", "Segoe UI", Verdana. sans-serif;
+  --font-secundary: "Arial", "Helvetica", sans-serif;
+  --boxShadow-primary: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*navbar*/
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 1000px;
+  padding: 2rem 0;
+  gap: 0.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+nav #marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav #marca i {
+  color: var(--color-bg);
+}
+
+nav div .logMark {
+  font-weight: bolder;
+  color: var(--color-text-secundary);
+}
+
+ul li a:hover {
+  width: fit-content;
+  color: var(--bg-btnColor);
+  border-bottom: 4px solid var(--bg-btnColor);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon .login a {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  box-shadow: var(--boxShadow-primary);
+  border-radius: 50%;
+  transition: all 0.4s ease-in;
+}
+
+.icon .login a:hover {
+  background-color: var(--bg-btnColor);
+}
+
+.icon .login i:hover {
+  color: var(--color-text-primary);
+}

@@ -1,0 +1,447 @@
+/*Estilos Global*/
+:root {
+  --color-bg: #0e141b;
+  --primary-color: #22333b;
+  --bg-btnColor: #9a031e;
+  --color-text-primary: #eae0d5;
+  --color-text-secundary: #ffb703;
+  --font-primary: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  --font-secundary: "Arial", "Helvetica", sans-serif;
+  --boxShadow-primary: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /*overflow: hidden;*/
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color: var(--color-text-primary);
+}
+
+/*BANNER */
+
+#banner {
+  margin: 6rem 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .content .primary-text {
+  min-height: 60%;
+}
+
+.container .content .primary-image {
+  width: 48%;
+  height: 60%;
+  max-width: 48%;
+  height: 60%;
+}
+
+/*Titulo Principal*/
+.title-primary {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+/*Caixa de mensagem*/
+.suggestion {
+  margin-top: 4rem;
+}
+
+#message {
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: small;
+  padding: 0 8px;
+  color: var(--color-text-secundary);
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  background-color: transparent;
+  min-height: 50px;
+  max-height: 40px;
+  min-width: 70%;
+  max-width: 60%;
+}
+
+.area-smg {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 3px var(--color-text-secundary);
+  border-radius: 10px;
+}
+
+/*About áreas de actução */
+#about {
+  height: 100vh;
+  width: 100%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #22333b34;
+  height: 100vh;
+  width: 100%;
+  padding: 1.3rem;
+  border-radius: 20px;
+}
+
+/*Estilos da área dos Projectos*/
+.texto {
+  position: absolute;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 12rem;
+  margin-top: 8rem;
+}
+
+.texto h2 {
+  margin-top: 14px;
+  color: var(--bg-btnColor);
+}
+
+.text p {
+  font-size: 1.1rem;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 16rem;
+  gap: 2rem;
+}
+
+#portifolio {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Mais projecto*/
+
+.moreProject {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  transition: 0.3s;
+  animation: surgir 0.6s linear;
+}
+
+.moreProject .btn {
+  background-color: var(--primary-color);
+  font-size: 0.9rem;
+}
+/*Ocultagem da div Mais Projecto*/
+.hidden {
+  display: none;
+}
+
+/*Hiostry*/
+.content2 {
+  display: flex;
+  margin-top: 6rem;
+  gap: 4rem;
+}
+
+.content2 h5 {
+  text-align: right;
+  border-bottom: 1px solid var(--color-text-secundary);
+  padding-bottom: 6px;
+}
+
+.content2 h2 {
+  border: none;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.tecnology {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 1.2rem;
+  gap: 0.9rem;
+}
+
+.tecnology img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.tecnology img:hover {
+  cursor: pointer;
+  transform: scale(1.8);
+}
+
+.content2 .btnTrajecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.btnTrajecto a {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 0;
+}
+
+.btnTrajecto a img {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  padding: 4px;
+  border: 2px solid var(--color-bg);
+  border-radius: 50%;
+  transition: 0.6s;
+  animation: circular 4s linear infinite;
+}
+
+/*Valores do programador  */
+
+#Apoios {
+  background-color: var(--color-text-primary);
+  color: var(--bg-btnColor);
+}
+
+.content-apoio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: auto;
+  margin: 8rem 0;
+  gap: 4rem;
+}
+
+.content-apoio .apoiante {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.content-apoio .apoiante .apoioDescription p {
+  color: var(--color-bg);
+  line-height: 0.9;
+}
+
+/*PLANOS DO SERVIÇOS*/
+.cardsPlanos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.planos {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.planos .titleWpm {
+  text-align: center;
+  line-height: 0.9;
+}
+
+.planos .titleWpm h1 {
+  font-size: 2.6rem;
+  color: var(--color-text-secundary);
+  opacity: 0.6;
+}
+
+.cardsPlanos {
+  margin-top: 6rem;
+}
+
+.planoCard .WPM {
+  text-align: center;
+  padding: 0.4rem;
+  border-bottom: 0.8px solid var(--color-text-secundary);
+  margin-bottom: 1.2rem;
+}
+
+.planoCard .WPM h4 {
+  margin-bottom: 10px;
+  color: var(--color-text-secundary);
+}
+
+.planoCard .WPM p {
+  line-height: 1;
+  font-size: 0.9rem;
+}
+
+.planoCard h2 {
+  text-align: center;
+  margin-bottom: 6px;
+  color: var(--color-text-secundary);
+}
+
+.cardsPlanos .planoCard {
+  background-color: #22333b31;
+  border: 2px solid var(--primary-color);
+  width: 360px;
+  height: auto;
+  border-radius: 10px;
+  padding: 1.4rem;
+  font-size: 0.9rem;
+}
+
+.cardsPlanos .planoCard .ri {
+  font-size: 1.4rem;
+}
+
+.cardsPlanos .planoCard .colorText {
+  display: flex;
+  align-items: center;
+  color: #416f85;
+}
+
+.btnOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+  margin-left: 18rem;
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: var(--boxShadow-primary);
+}
+
+.btnOne i {
+  transition: 0.2s;
+  animation: iconeLinear 0.6s linear infinite;
+  font-size: 0.9rem;
+}
+
+.btnOne:hover {
+  background-color: var(--color-bg);
+}
+
+.btnOne i:hover {
+  color: var(--color-text-primary);
+}
+
+.planos .cardMeio {
+  border: none;
+  box-shadow: 0 0 8px #9a031e;
+  position: relative;
+}
+
+.cardMeio .btnOne {
+  border: 1px solid var(--bg-btnColor);
+}
+
+.cardMeio .popular {
+  display: inline-block;
+  background-color: var(--bg-btnColor);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  position: absolute;
+  top: -0.8rem;
+  left: 8rem;
+}
+
+/*Valores do Programador*/
+.content-apoio {
+  position: relative;
+}
+
+.content-apoio h2 {
+  position: absolute;
+  top: -6rem;
+  right: 0;
+  color: var(--primary-color);
+  font-size: 0.94rem;
+}
+
+/*Mais Planos */
+
+.hiddenTwo {
+  display: none;
+}
+
+.mt-morePlan {
+  margin-top: 0;
+  transition: 0.3s;
+  animation: surgir 0.6s linear;
+}
+
+/*Linha do tempo | A minha Trajectória*/
+.lineTimeContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 98%;
+  height: 100vh;
+}
+
+.lineTimePrimary {
+  position: absolute;
+  top: 0;
+  width: 0.86px;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.iconLanguage {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconLanguage img {
+  position: relative;
+  top: 40px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 4rem;
+  padding: 4px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 4px solid var(--color-bg);
+  transition: 0.4s;
+}
+
+.iconLanguage img:hover {
+  transform: scale(1.9);
+  cursor: pointer;
+}
+
+/* Conteudos da Linha de tempo*/
+.lineDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  position: absolute;
+  top: 1rem;
+  right: 23rem;
+  width: 100px;
+  height: 80px;
+  background-color: #ffb80328;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0% 50%);
+}
+
+.seta1 {
+  top: 6.9rem;
+}

@@ -1,0 +1,324 @@
+/*Estilos Global*/
+:root {
+  --color-bg: #0e141b;
+  --primary-color: #22333b;
+  --bg-btnColor: #9a031e;
+  --color-text-primary: #eae0d5;
+  --color-text-secundary: #ffb703;
+  --font-primary: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  --font-secundary: "Arial", "Helvetica", sans-serif;
+  --boxShadow-primary: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*criar animação*/
+
+.line {
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--color-text-primary)
+  );
+  padding: 4px;
+  margin-top: 4rem;
+  margin-bottom: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  right: 0;
+  opacity: 0.4;
+  transition: 0.4s;
+  animation: round 2s linear infinite;
+}
+
+.lineRight {
+  left: 0;
+  transition: 0.4s;
+  animation: round2 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--color-text-primary),
+    var(--primary-color)
+  );
+  border-radius: 20px;
+}
+
+/*efeito da s linhas */
+@keyframes round {
+  from {
+    right: 80%;
+  }
+  to {
+    right: 40%;
+  }
+}
+
+@keyframes round2 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 40%;
+  }
+}
+
+/*animation do Mais Projectos*/
+@keyframes surgir {
+  from {
+    opacity: 0;
+    margin-right: -50%;
+  }
+
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+
+@keyframes circular {
+  0% {
+    transform: rotate(-180deg);
+  }
+  25% {
+    border-color: #9a031e;
+  }
+
+  50% {
+    border-color: #22333b;
+  }
+
+  75% {
+    border-color: #eae0d5;
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes iconeLinear {
+  from {
+    transform: translateX(-2px);
+  }
+
+  to {
+    transform: translateX(2px);
+  }
+}
+
+/*bolas girando na tela*/
+.bola {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 200, 255, 0.6);
+  animation: mover 20s infinite alternate ease-in-out;
+}
+
+/* Círculos diferentes com delays e durações */
+.bola:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  background: yellow;
+  animation-duration: 18s;
+}
+.bola:nth-child(2) {
+  top: 50%;
+  left: 30%;
+  background-color: red;
+  animation-duration: 22s;
+  animation-delay: 2s;
+}
+.bola:nth-child(3) {
+  top: 70%;
+  left: 60%;
+  background: #ccc;
+  animation-duration: 25s;
+  animation-delay: 4s;
+}
+.bola:nth-child(4) {
+  top: 40%;
+  left: 80%;
+  background: white;
+  animation-duration: 20s;
+  animation-delay: 6s;
+}
+
+.bola:nth-child(5) {
+  top: 30%;
+  left: 90%;
+  background: rgb(226, 22, 182);
+  animation-duration: 15s;
+  animation-delay: 8s;
+}
+
+.bola:nth-child(6) {
+  top: 20%;
+  left: 50%;
+  background: rgb(5, 236, 94);
+  animation-duration: 35s;
+  animation-delay: 2s;
+}
+
+.bola:nth-child(7) {
+  top: 60%;
+  left: 98%;
+  background: #5c0101;
+  animation-duration: 45s;
+  animation-delay: 3s;
+}
+
+@keyframes mover {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, -150px);
+  }
+  50% {
+    transform: translate(-150px, 200px);
+  }
+  75% {
+    transform: translate(150px, 150px);
+  }
+  100% {
+    transform: translate(-200px, -200px);
+  }
+}
+
+/*FIM DO ANIMAÇÃO*/
+
+/* Animação de rotação dos planetas no universo */
+
+.containerEspacoOrbital {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+/* Espaço geral */
+.space {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+/* Sol */
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #ffdd55, #ff9900);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px #ffcc33, 0 0 80px #ff9900;
+}
+
+/* Órbitas */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate linear infinite;
+}
+
+/* Tamanhos e velocidades das órbitas */
+.orbit1 {
+  width: 140px;
+  height: 140px;
+  animation-duration: 6s;
+}
+.orbit2 {
+  width: 220px;
+  height: 220px;
+  animation-duration: 10s;
+}
+.orbit3 {
+  width: 320px;
+  height: 320px;
+  animation-duration: 14s;
+}
+.orbit4 {
+  width: 420px;
+  height: 420px;
+  animation-duration: 20s;
+}
+
+/* Planetas */
+.planet {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* Cores dos planetas */
+.planet1 {
+  width: 20px;
+  height: 20px;
+  background: #3fa9f5;
+  box-shadow: 0 0 10px #3fa9f5;
+}
+.planet2 {
+  width: 28px;
+  height: 28px;
+  background: #2ecc71;
+  box-shadow: 0 0 12px #2ecc71;
+  position: relative;
+}
+.planet3 {
+  width: 24px;
+  height: 24px;
+  background: #ff6b6b;
+  box-shadow: 0 0 12px #ff6b6b;
+}
+.planet4 {
+  width: 30px;
+  height: 30px;
+  background: #9b59b6;
+  box-shadow: 0 0 14px #9b59b6;
+}
+
+/* Lua */
+.moon-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate linear infinite 3s;
+}
+.moon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 6px #fff;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

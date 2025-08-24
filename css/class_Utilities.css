@@ -1,0 +1,239 @@
+/*Classes Utilitárias*/
+:root {
+  --color-bg: #0e141b;
+  --primary-color: #22333b;
+  --bg-btnColor: #9a031e;
+  --color-text-primary: #eae0d5;
+  --color-text-secundary: #ffb703;
+  --font-primary: "Trebuchet MS", "Segoe UI", Verdana. sans-serif;
+  --font-secundary: "Arial", "Helvetica", sans-serif;
+  --boxShadow-primary: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.effeitText {
+  color: var(--bg-btnColor);
+  font-weight: lighter;
+}
+.font-SubTitle {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+a {
+  padding: 16px 10px 16px 10px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+.ri {
+  font-size: 20pt;
+  font-weight: lighter;
+  color: var(--color-text-secundary);
+}
+
+.icon a i:hover {
+  color: var(--bg-btnColor);
+}
+
+.title-info {
+  color: var(--color-text-secundary);
+  font-weight: lighter;
+  position: absolute;
+  padding-top: 20px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/*Section Container*/
+
+.section-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1000px;
+  min-width: 1000px;
+}
+
+.title-emphasis {
+  display: inline-block;
+  font-weight: lighter;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: var(--color-text-secundary);
+  border-bottom: 4px solid var(--bg-btnColor);
+  padding-bottom: 4px;
+}
+
+.margin-title-emphasis {
+  margin-bottom: 4.3rem;
+}
+
+.title-effase2 {
+  color: var(--bg-btnColor);
+  margin-bottom: 3rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.btn-one {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    var(--color-text-secundary),
+    var(--bg-btnColor)
+  );
+  color: var(--color-text-primary);
+  margin: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.1s;
+}
+
+.btn-one:active {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--color-text-primary)
+  );
+  transform: scale(0.95);
+  color: var(--primary-color);
+}
+
+input::placeholder {
+  font-size: 1.1rem;
+  opacity: 0.4;
+}
+
+/*Card*/
+
+.card {
+  margin-top: 2rem;
+  padding: 6px;
+  border-radius: 10px;
+  line-height: 1;
+  box-shadow: var(--boxShadow-primary);
+  transition: 0.3s;
+}
+
+.description-card {
+  text-align: center;
+}
+
+.description-card h3 {
+  margin: 30px 0;
+  color: var(--bg-btnColor);
+}
+
+.about a i {
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 0 6px var(--color-text-secundary);
+}
+
+.card:active {
+  box-shadow: 0 0 6px var(--bg-btnColor);
+  transform: scale(0.95);
+}
+
+/*SEÇCÃO DE PORTIFÓLIO*/
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: var(--boxShadow-primary);
+}
+
+.card-project img {
+  width: 100%;
+  height: 80%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 10pt;
+  justify-content: center;
+  background-color: var(--bg-btnColor);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: var(--color-text-primary);
+  box-shadow: var(--boxShadow-primary);
+  font-weight: lighter;
+}
+
+.btn i {
+  padding: 6px 6px;
+  font-size: 16px;
+  background-color: #2e01094b;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.card-project a i {
+  margin-left: 120px;
+}
+
+.btnStyle {
+  background-color: var(--color-bg);
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 0;
+  transition: 0.4s;
+}
+
+.btnStyle:hover {
+  background-color: var(--primary-color);
+  box-shadow: var(--boxShadow-primary);
+  cursor: pointer;
+}
+
+.btn i {
+  margin-left: 50px;
+}
+
+.btn i:hover {
+  opacity: 0.6;
+  color: var(--color-text-primary);
+}
+
+.btnStyle i:hover {
+  transform: rotate(90deg);
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+}
+
+/*Mais Card */
+
+.card-portifolio {
+  margin-top: 0;
+}
+
+/*card Plano*/
+.destaqueTitle {
+  font-weight: bolder;
+}
