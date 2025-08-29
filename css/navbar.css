@@ -28,8 +28,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1000px;
-  min-width: 1000px;
+  max-width: 62.5rem;
   padding: 2rem 0;
   gap: 0.8rem;
 }
@@ -74,7 +73,7 @@ ul li a:hover {
 .icon .login a {
   display: flex;
   align-items: center;
-  padding: 8px 10px;
+  padding: 0.5rem 0.625rem;
   box-shadow: var(--boxShadow-primary);
   border-radius: 50%;
   transition: all 0.4s ease-in;

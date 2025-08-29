@@ -20,12 +20,12 @@
 }
 
 a {
-  padding: 16px 10px 16px 10px;
+  padding: 1rem 0.625rem 1rem 0.625rem;
   color: var(--color-text-primary);
   text-decoration: none;
 }
 .ri {
-  font-size: 20pt;
+  font-size: 1.5rem;
   font-weight: lighter;
   color: var(--color-text-secundary);
 }
@@ -38,7 +38,7 @@ a {
   color: var(--color-text-secundary);
   font-weight: lighter;
   position: absolute;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   font-size: 1.2rem;
   opacity: 0.8;
 }
@@ -53,9 +53,7 @@ a {
 .container {
   display: flex;
   justify-content: center;
-
-  max-width: 1000px;
-  min-width: 1000px;
+  width: 62.5rem;
 }
 
 .title-emphasis {
@@ -81,16 +79,16 @@ p {
 }
 
 .btn-one {
-  padding: 16px 40px;
+  padding: 1rem 2.5rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background: linear-gradient(
     to right,
     var(--color-text-secundary),
     var(--bg-btnColor)
   );
   color: var(--color-text-primary);
-  margin: 4px;
+  margin: 0.25rem;
   cursor: pointer;
   font-size: 1rem;
   transition: 0.1s;
@@ -115,7 +113,7 @@ input::placeholder {
 
 .card {
   margin-top: 2rem;
-  padding: 6px;
+  padding: 0.375rem;
   border-radius: 10px;
   line-height: 1;
   box-shadow: var(--boxShadow-primary);
@@ -127,13 +125,13 @@ input::placeholder {
 }
 
 .description-card h3 {
-  margin: 30px 0;
+  margin: 1.875rem 0;
   color: var(--bg-btnColor);
 }
 
 .about a i {
   color: var(--primary-color);
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .card:hover {
@@ -150,8 +148,8 @@ input::placeholder {
 .card-project {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 200px;
+  width: 16.25rem;
+  height: 12.5rem;
   border-radius: 10px;
   box-shadow: var(--boxShadow-primary);
 }
@@ -186,22 +184,22 @@ input::placeholder {
 }
 
 .btn i {
-  padding: 6px 6px;
-  font-size: 16px;
+  padding: 0.375rem 0.375rem;
+  font-size: 1rem;
   background-color: #2e01094b;
   border-radius: 50%;
   transition: 0.3s;
 }
 
 .card-project a i {
-  margin-left: 120px;
+  margin-left: 7.5rem;
 }
 
 .btnStyle {
   background-color: var(--color-bg);
   border: none;
-  width: 200px;
-  height: 40px;
+  width: 12.5rem;
+  height: 2.5rem;
   border-radius: 0;
   transition: 0.4s;
 }
@@ -236,4 +234,9 @@ input::placeholder {
 /*card Plano*/
 .destaqueTitle {
   font-weight: bolder;
+}
+
+footer .ri {
+  color: #416f85;
+  font-size: 1.25rem;
 }
