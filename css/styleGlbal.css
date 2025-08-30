@@ -44,14 +44,21 @@ body {
 }
 
 .container .content .primary-text {
-  min-height: 60%;
+  height: 70%;
+  width: 46%;
 }
 
 .container .content .primary-image {
-  width: 48%;
-  height: 60%;
-  max-width: 48%;
-  height: 60%;
+  display: flex;
+  align-items: center;
+  width: 54%;
+  height: 70%;
+  margin-left: 2rem;
+}
+.primary-image img {
+  width: auto;
+  height: auto;
+  margin-left: 5rem;
 }
 
 /*Titulo Principal*/
@@ -85,10 +92,12 @@ body {
   align-items: center;
   box-shadow: 0 0 3px var(--color-text-secundary);
   border-radius: 10px;
+  padding-right: 2rem;
 }
 
 /*About áreas de actução */
 #about {
+  margin-top: 2rem;
   height: 100vh;
   width: 100%;
 }
@@ -451,7 +460,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
+  font-weight: 600;
   color: var(--color-text-primary);
   position: absolute;
   top: 1rem;
@@ -502,7 +512,7 @@ body {
 .seta7 {
   top: 36.4rem;
   background-color: #78cfed;
-  color: var(--color-text-primary);
+  color: var(--primary-color);
   left: 21.8rem;
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
 }
